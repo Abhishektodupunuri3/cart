@@ -1,6 +1,6 @@
 @Library('roboshop-shared-library')
 
-pipeline {
+ pipeline {
     agent any 
     stages {
         stage('Lint Checks') {
