@@ -6,8 +6,9 @@
         stage('Lint Checks') {
             steps {  
                 script {
-                    sample.info{}
+                    sample.info{"CART"}
                 }
+                sh "echo hello"
                 sh "echo Installing JSlint"
                 sh "npm i jslint"
                 sh "node_modules/jslint/bin/jslint.js server.js || true"
